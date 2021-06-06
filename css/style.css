@@ -1,0 +1,369 @@
+.header-menu {
+  background-image: url(/img/header-bg.png);
+  width: 100%;
+}
+.icone-cel {
+  mix-blend-mode: multiply;
+  margin-top: 10px;
+}
+.header-menu p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 14px;
+  color: #fafaf9;
+  margin-top: 20px;
+}
+.endereco {
+  text-align: left;
+}
+.header-menu a {
+  margin-left: 200px;
+}
+/*MENU INFERIOR*/
+.header-inferior {
+  background-image: url(/img/header-bg-1.png);
+  width: 100%;
+  height: 67px;
+}
+.logo-menu {
+  margin-top: 9.2px;
+  width: 50px;
+}
+.header-inferior p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 14px;
+  color: #fafaf9;
+  margin-top: 20px;
+}
+.header-inferior ul {
+  margin-left: 16px;
+  margin-top: 16px;
+}
+.header-inferior ul li {
+  display: inline-block;
+  margin: 10px 50px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  line-height: 14px;
+}
+.header-inferior ul li a {
+  color: #fafaf9;
+}
+.header-inferior ul li a:hover {
+  color: #d49e32;
+}
+/*CHAMADA*/
+.chamada-bg {
+  background-image: url(/img/propaganda-bg.png);
+  height: 246px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.chamada-bg h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fafaf9;
+  margin-top: 50px;
+  animation: ease-in-out fade-in 3s; /*ANIMAÇÃO PARA O FADE IN*/
+}
+@keyframes fade-in {
+  /*O @keyframesCSS em regra controla as etapas intermediárias em uma sequência de animação CSS, definindo estilos para quadros-chave (ou pontos de referência) ao longo da sequência de animação. Isso dá mais controle sobre as etapas intermediárias da sequência de animação do que as transições */
+  /*RELAÇÃO DO FADE IN COM O H1*/
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.chamada-bg h1::after {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 3px;
+  background: #8d846b;
+  margin: 8px 5px;
+}
+/*PLANOS*/
+.planos-bg {
+  height: 380px;
+}
+.plano-basic {
+  background-color: #bfbebe;
+  height: 280px;
+  margin-top: 40px;
+  animation: ease-in-out fade-in 1s;
+}
+
+.plano-basic img {
+  mix-blend-mode: multiply; /*criar mesclagem com o plano de fundo*/
+  margin-top: 20px;
+}
+.tittle-plan {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 8px;
+  color: black;
+}
+
+.tittle-plan::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #d49e32;
+  margin: 8px auto;
+}
+
+.plano-basic ul {
+  text-align: center;
+  margin-top: 20px;
+}
+.plano-basic ul li {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #707070;
+  margin-bottom: 8px;
+}
+.plano-basic:hover {
+  background-color: #8d846b;
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 6px 9px 9px black;
+  color: #d49e32;
+  height: 300px;
+}
+.plano-basic:hover h1 {
+  color: #d49e32;
+}
+.plano-basic:hover li {
+  color: #d49e32;
+  font-size: 16px;
+  font-weight: bold;
+}
+/*PLANO STANDART*/
+.plano-standart {
+  background-color: #bfbebe;
+  height: 280px;
+  margin-top: 40px;
+  animation: ease-in-out fade-in 1.5s;
+  animation: cubic-bezier(10, 5, 0, 1) fade-in 2s;
+}
+.plano-standart img {
+  mix-blend-mode: multiply; /*criar mesclagem com o plano de fundo*/
+  margin-top: 20px;
+}
+.tittle-plan {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 8px;
+}
+.tittle-plan::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #8d846b;
+  margin: 8px auto;
+}
+.plano-standart ul {
+  text-align: center;
+  margin-top: 20px;
+}
+.plano-standart ul li {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #707070;
+  margin-bottom: 8px;
+}
+.plano-standart:hover {
+  background-color: #8d846b;
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 6px 9px 9px black;
+  color: #d49e32;
+  height: 300px;
+}
+.plano-standart:hover h1 {
+  color: #d49e32;
+}
+.plano-standart:hover li {
+  color: #d49e32;
+  font-size: 16px;
+  font-weight: bold;
+}
+/*PLANO GOLD*/
+.plano-gold {
+  background-color: #bfbebe;
+  height: 280px;
+  margin-top: 40px;
+  animation: ease-in-out fade-in 2s;
+}
+.plano-gold img {
+  mix-blend-mode: multiply; /*criar mesclagem com o plano de fundo*/
+  margin-top: 20px;
+}
+.tittle-plan {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 8px;
+}
+.tittle-plan::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #8d846b;
+  margin: 8px auto;
+}
+.plano-gold ul {
+  text-align: center;
+  margin-top: 20px;
+}
+.plano-gold ul li {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #707070;
+  margin-bottom: 8px;
+}
+.plano-gold:hover {
+  background-color: #8d846b;
+  /* offset-x | offset-y | blur-radius | color */
+  box-shadow: 6px 9px 9px black;
+  color: #d49e32;
+  height: 300px;
+}
+.plano-gold:hover h1 {
+  color: #d49e32;
+}
+.plano-gold:hover li {
+  color: #d49e32;
+  font-size: 16px;
+  font-weight: bold;
+}
+/*AFILIADOS*/
+.afiliado-bg {
+  background-color: #bfbebe;
+  width: 100%;
+  height: 513px;
+}
+.afiliado-bg h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: black;
+  margin-top: 50px;
+  text-align: center;
+}
+.afiliado-bg h1::after {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 3px;
+  background: #8d846b;
+  margin: 8px 5px;
+  margin-left: 300px;
+}
+
+.notebook-afiliado {
+  margin-top: 70px;
+  margin-left: 10px;
+  text-align: center;
+  margin-left: 10px;
+}
+.smart-afiliado {
+  margin-top: 40px;
+  mix-blend-mode: multiply;
+  margin-left: 10px;
+  text-align: center;
+}
+.tablet-afiliado {
+  margin-top: 40px;
+  margin-left: 10px;
+  text-align: center;
+}
+.btn {
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #d49e32;
+  background-color: #8d846b;
+  padding: 20px 30px;
+  margin-top: 20px;
+  margin-left: 39%;
+}
+.btn:hover {
+  color: #fafaf9;
+  box-shadow: black 6px 9px 9px;
+}
+.quote-interno {
+  height: 130px;
+  text-align: center;
+  padding: 50px;
+}
+.quote-interno cite {
+  text-align: right;
+}
+.contato {
+  background-image: url(/img/contato-bg.png);
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contato h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fafaf9;
+  margin-top: 50px;
+  text-align: center;
+}
+.contato h1::after {
+  content: "";
+  display: block;
+  width: 123px;
+  height: 3px;
+  background: #8d846b;
+  margin: 8px 5px;
+  margin-left: 390px;
+}
+
+.contato_form label {
+  display: block;
+  color: #fafaf9;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+.contato_form input {
+  background-color: transparent;
+  border: #fafaf9 3px solid;
+  width: 388px;
+  height: 40px;
+}
+.contato_form textarea {
+  height: 100px;
+  width: 388px;
+  background-color: transparent;
+  border: #fafaf9 3px solid;
+}
+.btn-preto {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fafaf9;
+  background-color: #8d846b;
+  padding: 10px 30px;
+  margin-left: 0px;
+}
+.divisor {
+  margin-top: 70px;
+}
